@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_item_contact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorBackground">
+
+    <TextView
+        android:id="@+id/item_contact_lblName"
+        android:layout_width="220dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="16dp"
+        android:gravity="bottom"
+        android:text="Supparwitch"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/item_contact_btn_call"
+        app:layout_constraintHorizontal_bias="0.724"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_contact_lblPhone"
+        android:layout_width="200dp"
+        android:layout_height="36dp"
+        android:layout_marginBottom="16dp"
+        android:text="0478021224"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.317"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/item_contact_lblName"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/item_contact_btn_call"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="4dp"
+        android:drawableStart="@drawable/icon_call"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/item_contact_btn_message"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+    <Button
+        android:id="@+id/item_contact_btn_message"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="32dp"
+        android:drawableStart="@drawable/icon_message"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

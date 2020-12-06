@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="?attr/colorBackground">
+    <!--tools:background="@color/colorBackgroundDarkTheme"-->
+
+    <TextView
+        android:id="@+id/welcome_txtWelcome"
+        android:layout_width="351dp"
+        android:layout_height="72dp"
+        android:text="@string/w_e_l_c_o_m_e"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_txtChooseYrFavorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.82" />
+
+    <Button
+        android:id="@+id/welcome_btnDark"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="16dp"
+        android:text="Dark"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/welcome_btnLight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_txtChooseYrFavorite"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <Button
+        android:id="@+id/welcome_btnLight"
+        android:layout_width="173dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="32dp"
+        android:text="Light"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_txtChooseYrFavorite"
+        app:layout_constraintVertical_bias="0.063" />
+
+    <TextView
+        android:id="@+id/welcome_txtChooseYrFavorite"
+        android:layout_width="343dp"
+        android:layout_height="19dp"
+        android:text="choose your favorite"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="87dp"
+        android:layout_height="27dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

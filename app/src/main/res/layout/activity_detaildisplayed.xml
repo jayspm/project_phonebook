@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bg_activity_detaildisplayed"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorBackground">
+
+    <TextView
+        android:id="@+id/detail_lblName"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="112dp"
+        android:background="#00FFF7"
+        android:text="@string/name"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/detail_lblDisplayDob"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:background="#DBFFFE"
+        android:gravity="center"
+        android:text="@string/_12_12_2020"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lblDob"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/detail_lblDob"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:background="#00FFF7"
+        android:text="@string/date_of_birth"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lblDisplayEmail" />
+
+    <TextView
+        android:id="@+id/detail_lblDisplayEmail"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:background="#DBFFFE"
+        android:gravity="center"
+        android:text="mail@mail.com"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lblEmail" />
+
+    <TextView
+        android:id="@+id/detail_lblEmail"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:background="#00FFF7"
+        android:text="Email"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lblDisplayPhone" />
+
+    <TextView
+        android:id="@+id/detail_lblDisplayPhone"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:background="#DBFFFE"
+        android:gravity="center"
+        android:text="0478000330"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lblPhone" />
+
+    <TextView
+        android:id="@+id/detail_lblDisplayName"
+        android:layout_width="322dp"
+        android:layout_height="70dp"
+        android:background="#DBFFFE"
+        android:gravity="center"
+        android:text="@string/ricky"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lblName" />
+
+    <TextView
+        android:id="@+id/detail_lblPhone"
+        android:layout_width="322dp"
+        android:layout_height="33dp"
+        android:background="#00FFF7"
+        android:text="Phone"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/detail_lblDisplayName" />
+
+    <Button
+        android:id="@+id/detail_btnBack"
+        android:layout_width="153dp"
+        android:layout_height="41dp"
+        android:drawableStart="@drawable/icon_back"
+        android:text="@string/back"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.174"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.099" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
